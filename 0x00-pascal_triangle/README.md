@@ -1,48 +1,95 @@
-0x00. Pascal's Triangle
-Algorithm Python
+```markdown
+# 0x00 Pascal's Triangle
 
-Resources
-What is Pascal’s triangle
-Pascal’s Triangle - Numberphile
-What are Python Algorithms
-Additional Resources
-Mock Technical Interview
-Must Know
-To successfully complete this project, you should revise the following Python concepts:
+This repository contains a Python implementation of Pascal's Triangle, a triangular array of the binomial coefficients. It is a well-known mathematical concept used in combinatorics, algebra, and probability.
 
-Lists and List Comprehensions:
+## Table of Contents
 
-Understand how to create, access, modify, and iterate over lists.
-Utilize list comprehensions for more concise and readable code, especially for generating rows of Pascal’s Triangle.
-Functions:
+- [Introduction](#introduction)
+- [Pascal's Triangle](#pascals-triangle)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Know how to define and call functions.
-Pass parameters and return values, particularly how to return a list of lists representing Pascal’s Triangle.
-Loops:
+## Introduction
 
-Use for and while loops to iterate through sequences.
-Nested loops may be necessary for generating each row and calculating the values of Pascal’s Triangle.
-Conditional Statements:
+Pascal's Triangle is a triangular arrangement of numbers where each number is the sum of the two numbers directly above it. This implementation provides a function to generate Pascal's Triangle up to a specified number of rows.
 
-Apply if, elif, and else conditions to implement logic based on the position within Pascal’s Triangle (e.g., the edges of the triangle always being 1).
-Recursion (Optional):
+## Pascal's Triangle
 
-While not strictly necessary, understanding recursion can provide an alternative approach to generating Pascal’s Triangle.
-Recognize base cases and recursive cases for a function that generates the triangle’s rows.
-Arithmetic Operations:
+The rows of Pascal's Triangle are conventionally enumerated starting with row zero at the top. The values in each row are calculated as the sum of the two values directly above, starting with `1` at the edges.
 
-Perform addition, a fundamental operation for calculating each element of Pascal’s Triangle as the sum of the two elements directly above it.
-Indexing and Slicing:
+### Example
+```
 
-Access elements and slices of lists, crucial for identifying and summing the correct elements when constructing each row of the triangle.
-Memory Management:
+      1
+     1 1
+    1 2 1
 
-Be mindful of how lists are stored and copied, especially when creating new rows based on the values of the previous row.
-Error and Exception Handling (Optional):
+1 3 3 1
+1 4 6 4 1
 
-Use try-except blocks as needed to handle potential errors, such as invalid input types or values.
-Efficiency and Optimization:
+````
 
-Consider the time and space complexity of different approaches to generating Pascal’s Triangle.
-Evaluate and apply optimizations to improve the performance of the solution.
-By revisiting these concepts, you will be well-prepared to tackle the challenges of implementing Pascal’s Triangle in Python, applying both your mathematical understanding and programming skills to develop an efficient and effective solution.
+## Usage
+
+The script includes a function that generates Pascal's Triangle. To use the function:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/IbnuJabir/alx-interview.git
+````
+
+2. Navigate to the repository directory:
+
+```bash
+cd alx-interview/0x00-pascal_triangle
+```
+
+3. Run the Python script to generate Pascal's Triangle:
+
+```bash
+python3 0-pascal_triangle.py
+```
+
+### Function Description
+
+- **`pascal_triangle(n)`**: Returns a list of lists of integers representing the first `n` rows of Pascal's Triangle.
+
+### Example
+
+```python
+from pascal_triangle import pascal_triangle
+
+# Generate the first 5 rows of Pascal's Triangle
+rows = pascal_triangle(5)
+for row in rows:
+    print(row)
+```
+
+## Contributing
+
+Contributions are welcome! If you have ideas for improvements or additional features, please submit a pull request.
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes and push them to your fork.
+4. Open a pull request with a description of your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or suggestions, please contact:
+
+- **Name:** Kedir Jabir
+- **Email:** kedirjabir12@gmail.com
+- **GitHub:** [IbnuJabir](https://github.com/IbnuJabir)
+
+---
+
+Thank you for your interest in Pascal's Triangle! We hope this implementation helps in your explorations of combinatorics and beyond.
