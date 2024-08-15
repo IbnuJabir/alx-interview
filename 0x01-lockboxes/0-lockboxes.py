@@ -5,12 +5,9 @@ Solution to the lockboxes problem.
 
 def canUnlockAll(boxes):
     """
-    Determines if all boxes can be opened with the keys available.
-    
-    Parameters:
-    boxes (list of list of int): A list where each sublist contains the keys available in that particular box.
-    
-    Returns: bool: True if all boxes can be opened, False otherwise.
+    Determines whether a series of locked boxes can be opened
+    based on keys that can be attained.
+    Solution to the lockboxes problem
     """
     keys = set([0])
     queue = [0]
